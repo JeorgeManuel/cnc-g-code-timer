@@ -69,12 +69,8 @@ Includes a simple Tkinter/CustomTkinter-based interface:
 Example structure (your repo may differ):
 
 ```
-├── main.py                # GUI + logic entry point
-├── timerlogic.py          # Modular time calculations
-├── assets/
-│   └── logo.png
-├── gcode_samples/
-│   └── example.nc
+├── main.py                # GUI + logic entry point 
+├── logo.png
 └── README.md
 ```
 
