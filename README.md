@@ -73,8 +73,28 @@ Example structure (your repo may differ):
 ├── logo.png
 └── README.md
 ```
+### **📄 Example G-Code Snippet**
 
----
+```gcode
+(Helical Interpolation Example)
+G90 G94
+G17
+
+G0 X10.000 Y15.000 Z5.000        (Rapid to start point)
+
+G1 Z0.000 F300.0                 (Plunge to surface)
+
+G2 X12.020 Y17.879 Z-6.000 I-0.975 J4.900 F180.000
+                                (Helical arc: XY arc + descending Z)
+
+G1 X20.000 Y25.000 F500.0        (Linear move)
+
+G3 X18.000 Y30.000 I-2.000 J1.500 F200.000
+                                (Counter-clockwise arc)
+
+G0 Z10.000                       (Retract)
+M30                              (End of program)
+```
 
 ## **🧮 Mathematical Details**
 
